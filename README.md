@@ -1,3 +1,5 @@
+A link to the live site:    https://sage-hamster-6d2fd8.netlify.app/
+
 This is a simple project that demonstrates a basic e-commerce website for kids' toys using React and Redux. The project consists of three main pages: HomePage, ToysPage, and CheckoutPage. It allows users to browse and add toys to their shopping cart and proceed to checkout.
 
 
