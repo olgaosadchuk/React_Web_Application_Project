@@ -1,11 +1,12 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import toysData from '../api/listoftoys.json';
 
 export const fetchToys = createAsyncThunk(
-  'toys/fetchToys',
-  async () => {
-    return toysData;
-  }
+    'toys/fetchToys',
+    async () => {
+        const response = await fetch('https://raw.githubusercontent.com/olgaosadchuk/toys-api/main/toys.json');
+        const data = await response.json();
+        return data;
+    }
 );
 
 const toysSlice = createSlice({
